@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "mocha": "mocha --require ts-node/register --extensions ts,tsx --watch --watch-files src 'src/**/*.{test.ts,test.tsx}'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "ts-node": "^8.10.2"
   }
 }
